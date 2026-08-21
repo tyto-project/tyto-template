@@ -15,6 +15,9 @@ on:
     branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   checks:
     uses: tyto-project/.github/.github/workflows/checks.yml@008d898ba1669d0f392b831d2884410ba0a88996 # main @ 2026-07-18
